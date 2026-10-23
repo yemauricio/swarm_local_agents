@@ -1,0 +1,23 @@
+[project]
+name = "Distributed local agents"
+version = "0.1.0"
+description = "Get Your local old machines alive with distributed agents wit SLLM's achievin similar perfomances to 'frontier' without exposing your information "
+readme = "README.md"
+authors = [
+    { name = "yema"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.0",
+    "loguru>=0.7.3",
+    "pytest>=9.1.1",
+    "requests>=2.34.2",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+agent-platform-linux = "agent_platform_linux:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
