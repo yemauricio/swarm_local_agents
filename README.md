@@ -22,7 +22,7 @@ Architecture:
 
 ```mermaid
 flowchart TD
-    user_request([Petición Usuario]) <--> UI 
+    user_request <--> UI 
     UI --> supervisor{Supervisor}
     supervisor --> worker_1[Worker 1]
     worker_1 --> supervisor
