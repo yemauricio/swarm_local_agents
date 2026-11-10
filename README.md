@@ -20,12 +20,12 @@ Folders structure:
 ```
 Architecture:
 
-```graph TD;
-     user_reques-->supervisor;
-     supervisor-->worker_1;
-     worker_1-->supervisor;
-     supervisor-->worker_2;
-     worker_2-->supervisor;
+```graph TD
+    user_request([request]) --> supervisor{Supervisor}
+    supervisor --> worker_1[Worker 1]
+    worker_1 --> supervisor
+    supervisor --> worker_2[Worker 2]
+    worker_2 --> supervisor
 ```
 
 Install on any Linux machine:
