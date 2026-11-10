@@ -1,0 +1,13 @@
+{
+    "workers": [
+        {
+            "url": "192.168.x.xx",
+            "model": "qwen2.5:1.5b",
+            "machine": "machine-name",
+            "size":"Xgb",
+            "actions":["code", "debug"]
+        }
+        
+    ]
+}
+
