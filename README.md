@@ -3,7 +3,7 @@
 Linux-only, ollama-based backbone for ordinary PCs/laptops.
 
 Folders structure:
-```
+``
 [Project Root]/
 ├── deploy/               # Contains all agent and server execution
 │   ├── install_dist.sh   # Bash procedure for installing and starting
@@ -20,12 +20,15 @@ Folders structure:
 ```
 Architecture:
 
-```graph TD
-    user_request([request]) --> supervisor{Supervisor}
+```mermaid
+flowchart TD
+    user_request([Petición Usuario]) <--> UI 
+    UI --> supervisor{Supervisor}
     supervisor --> worker_1[Worker 1]
     worker_1 --> supervisor
     supervisor --> worker_2[Worker 2]
     worker_2 --> supervisor
+    supervisor --> UI
 ```
 
 Install on any Linux machine:
