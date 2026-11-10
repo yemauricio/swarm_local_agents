@@ -3,7 +3,7 @@
 Linux-only, ollama-based backbone for ordinary PCs/laptops.
 
 Folders structure:
-``
+```
 [Project Root]/
 ├── deploy/               # Contains all agent and server execution
 │   ├── install_dist.sh   # Bash procedure for installing and starting
