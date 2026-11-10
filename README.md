@@ -3,7 +3,7 @@
 Linux-only, ollama-based backbone for ordinary PCs/laptops.
 
 Folders structure:
-
+```
 [Project Root]/
 ├── deploy/               # Contains all agent and server execution
 │   ├── install_dist.sh   # Bash procedure for installing and starting
@@ -17,7 +17,7 @@ Folders structure:
 ├── pyproject.toml        # Pyproject register for uv-astral 
 ├── uv.lock               # Uv file basic libraries (only low level not llamaindex, langchain, langraph etc)
 └── robotignore.md        # Instructions for agentic tools to make sure the user understands what is behind
-
+```
 Architecture:
 
 ```graph TD;
